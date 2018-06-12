@@ -1,0 +1,152 @@
+<HBMesh>
+  <Mesh Vertices="30" Edges="58" Faces="0">
+    <Vertex Index="0" Edge="1">
+      <Attribute Position="1,0" />
+    </Vertex>
+    <Vertex Index="1" Edge="3">
+      <Attribute Position="0.9238795,0.3826835" />
+    </Vertex>
+    <Vertex Index="2" Edge="5">
+      <Attribute Position="0.7071068,0.7071068" />
+    </Vertex>
+    <Vertex Index="3" Edge="7">
+      <Attribute Position="0.3826834,0.9238795" />
+    </Vertex>
+    <Vertex Index="4" Edge="9">
+      <Attribute Position="-4.371139E-08,1" />
+    </Vertex>
+    <Vertex Index="5" Edge="11">
+      <Attribute Position="-0.3826835,0.9238795" />
+    </Vertex>
+    <Vertex Index="6" Edge="13">
+      <Attribute Position="-0.7071068,0.7071068" />
+    </Vertex>
+    <Vertex Index="7" Edge="15">
+      <Attribute Position="-0.9238796,0.3826833" />
+    </Vertex>
+    <Vertex Index="8" Edge="17">
+      <Attribute Position="-1,-8.742278E-08" />
+    </Vertex>
+    <Vertex Index="9" Edge="19">
+      <Attribute Position="-0.9238795,-0.3826834" />
+    </Vertex>
+    <Vertex Index="10" Edge="21">
+      <Attribute Position="-0.7071066,-0.7071069" />
+    </Vertex>
+    <Vertex Index="11" Edge="23">
+      <Attribute Position="-0.3826831,-0.9238797" />
+    </Vertex>
+    <Vertex Index="12" Edge="25">
+      <Attribute Position="1.192488E-08,-1" />
+    </Vertex>
+    <Vertex Index="13" Edge="27">
+      <Attribute Position="0.3826836,-0.9238794" />
+    </Vertex>
+    <Vertex Index="14" Edge="29">
+      <Attribute Position="0.707107,-0.7071065" />
+    </Vertex>
+    <Vertex Index="15" Edge="31">
+      <Attribute Position="0.9238796,-0.3826834" />
+    </Vertex>
+    <Vertex Index="16" Edge="33">
+      <Attribute Position="-1.74481E-07,-8.020284E-07" />
+    </Vertex>
+    <Vertex Index="17" Edge="35">
+      <Attribute Position="5.059431E-07,-2.679317E-07" />
+    </Vertex>
+    <Vertex Index="18" Edge="37">
+      <Attribute Position="-3.9818E-07,6.886207E-08" />
+    </Vertex>
+    <Vertex Index="19" Edge="39">
+      <Attribute Position="2.059197E-07,-6.74626E-08" />
+    </Vertex>
+    <Vertex Index="20" Edge="41">
+      <Attribute Position="-1.633396E-07,2.214942E-08" />
+    </Vertex>
+    <Vertex Index="21" Edge="43">
+      <Attribute Position="-4.065697E-08,-1.292492E-07" />
+    </Vertex>
+    <Vertex Index="22" Edge="45">
+      <Attribute Position="-6.379588E-08,1.242153E-07" />
+    </Vertex>
+    <Vertex Index="23" Edge="47">
+      <Attribute Position="-4.420744E-08,9.489914E-08" />
+    </Vertex>
+    <Vertex Index="24" Edge="49">
+      <Attribute Position="-1.826768E-10,-3.153562E-08" />
+    </Vertex>
+    <Vertex Index="25" Edge="51">
+      <Attribute Position="4.161265E-08,1.160663E-08" />
+    </Vertex>
+    <Vertex Index="26" Edge="53">
+      <Attribute Position="3.143976E-08,4.809327E-09" />
+    </Vertex>
+    <Vertex Index="27" Edge="55">
+      <Attribute Position="-1.407352E-08,2.214942E-08" />
+    </Vertex>
+    <Vertex Index="28" Edge="57">
+      <Attribute Position="-2.681263E-09,1.453736E-08" />
+    </Vertex>
+    <Vertex Index="29" Edge="56">
+      <Attribute Position="7.046775E-09,4.809323E-09" />
+    </Vertex>
+    <Edge Index="0" Vertex="19" Face="-1" Previous="-1" Next="35" Opposite="1" />
+    <Edge Index="1" Vertex="0" Face="-1" Previous="39" Next="-1" Opposite="0" />
+    <Edge Index="2" Vertex="25" Face="-1" Previous="-1" Next="50" Opposite="3" />
+    <Edge Index="3" Vertex="1" Face="-1" Previous="4" Next="-1" Opposite="2" />
+    <Edge Index="4" Vertex="25" Face="-1" Previous="-1" Next="3" Opposite="5" />
+    <Edge Index="5" Vertex="2" Face="-1" Previous="51" Next="-1" Opposite="4" />
+    <Edge Index="6" Vertex="28" Face="-1" Previous="-1" Next="56" Opposite="7" />
+    <Edge Index="7" Vertex="3" Face="-1" Previous="54" Next="-1" Opposite="6" />
+    <Edge Index="8" Vertex="23" Face="-1" Previous="-1" Next="46" Opposite="9" />
+    <Edge Index="9" Vertex="4" Face="-1" Previous="44" Next="-1" Opposite="8" />
+    <Edge Index="10" Vertex="22" Face="-1" Previous="-1" Next="44" Opposite="11" />
+    <Edge Index="11" Vertex="5" Face="-1" Previous="12" Next="-1" Opposite="10" />
+    <Edge Index="12" Vertex="22" Face="-1" Previous="-1" Next="11" Opposite="13" />
+    <Edge Index="13" Vertex="6" Face="-1" Previous="45" Next="-1" Opposite="12" />
+    <Edge Index="14" Vertex="18" Face="-1" Previous="-1" Next="36" Opposite="15" />
+    <Edge Index="15" Vertex="7" Face="-1" Previous="16" Next="-1" Opposite="14" />
+    <Edge Index="16" Vertex="18" Face="-1" Previous="-1" Next="15" Opposite="17" />
+    <Edge Index="17" Vertex="8" Face="-1" Previous="37" Next="-1" Opposite="16" />
+    <Edge Index="18" Vertex="20" Face="-1" Previous="-1" Next="37" Opposite="19" />
+    <Edge Index="19" Vertex="9" Face="-1" Previous="41" Next="-1" Opposite="18" />
+    <Edge Index="20" Vertex="21" Face="-1" Previous="-1" Next="42" Opposite="21" />
+    <Edge Index="21" Vertex="10" Face="-1" Previous="32" Next="-1" Opposite="20" />
+    <Edge Index="22" Vertex="16" Face="-1" Previous="-1" Next="32" Opposite="23" />
+    <Edge Index="23" Vertex="11" Face="-1" Previous="24" Next="-1" Opposite="22" />
+    <Edge Index="24" Vertex="16" Face="-1" Previous="-1" Next="23" Opposite="25" />
+    <Edge Index="25" Vertex="12" Face="-1" Previous="33" Next="-1" Opposite="24" />
+    <Edge Index="26" Vertex="24" Face="-1" Previous="-1" Next="43" Opposite="27" />
+    <Edge Index="27" Vertex="13" Face="-1" Previous="49" Next="-1" Opposite="26" />
+    <Edge Index="28" Vertex="17" Face="-1" Previous="-1" Next="34" Opposite="29" />
+    <Edge Index="29" Vertex="14" Face="-1" Previous="30" Next="-1" Opposite="28" />
+    <Edge Index="30" Vertex="17" Face="-1" Previous="-1" Next="29" Opposite="31" />
+    <Edge Index="31" Vertex="15" Face="-1" Previous="35" Next="-1" Opposite="30" />
+    <Edge Index="32" Vertex="21" Face="-1" Previous="22" Next="21" Opposite="33" />
+    <Edge Index="33" Vertex="16" Face="-1" Previous="43" Next="25" Opposite="32" />
+    <Edge Index="34" Vertex="19" Face="-1" Previous="28" Next="38" Opposite="35" />
+    <Edge Index="35" Vertex="17" Face="-1" Previous="0" Next="31" Opposite="34" />
+    <Edge Index="36" Vertex="20" Face="-1" Previous="14" Next="40" Opposite="37" />
+    <Edge Index="37" Vertex="18" Face="-1" Previous="18" Next="17" Opposite="36" />
+    <Edge Index="38" Vertex="26" Face="-1" Previous="34" Next="52" Opposite="39" />
+    <Edge Index="39" Vertex="19" Face="-1" Previous="50" Next="1" Opposite="38" />
+    <Edge Index="40" Vertex="27" Face="-1" Previous="36" Next="47" Opposite="41" />
+    <Edge Index="41" Vertex="20" Face="-1" Previous="55" Next="19" Opposite="40" />
+    <Edge Index="42" Vertex="24" Face="-1" Previous="20" Next="48" Opposite="43" />
+    <Edge Index="43" Vertex="21" Face="-1" Previous="26" Next="33" Opposite="42" />
+    <Edge Index="44" Vertex="23" Face="-1" Previous="10" Next="9" Opposite="45" />
+    <Edge Index="45" Vertex="22" Face="-1" Previous="47" Next="13" Opposite="44" />
+    <Edge Index="46" Vertex="27" Face="-1" Previous="8" Next="54" Opposite="47" />
+    <Edge Index="47" Vertex="23" Face="-1" Previous="40" Next="45" Opposite="46" />
+    <Edge Index="48" Vertex="29" Face="-1" Previous="42" Next="57" Opposite="49" />
+    <Edge Index="49" Vertex="24" Face="-1" Previous="52" Next="27" Opposite="48" />
+    <Edge Index="50" Vertex="26" Face="-1" Previous="2" Next="39" Opposite="51" />
+    <Edge Index="51" Vertex="25" Face="-1" Previous="53" Next="5" Opposite="50" />
+    <Edge Index="52" Vertex="29" Face="-1" Previous="38" Next="49" Opposite="53" />
+    <Edge Index="53" Vertex="26" Face="-1" Previous="56" Next="51" Opposite="52" />
+    <Edge Index="54" Vertex="28" Face="-1" Previous="46" Next="7" Opposite="55" />
+    <Edge Index="55" Vertex="27" Face="-1" Previous="57" Next="41" Opposite="54" />
+    <Edge Index="56" Vertex="29" Face="-1" Previous="6" Next="53" Opposite="57" />
+    <Edge Index="57" Vertex="28" Face="-1" Previous="48" Next="55" Opposite="56" />
+  </Mesh>
+</HBMesh>

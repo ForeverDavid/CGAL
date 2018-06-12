@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE7F96AB-8641-44A0-9CE9-5215608A992F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CGAL.Meshes</RootNamespace>
+    <AssemblyName>CGAL.Meshes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Core">
+      <HintPath>..\..\Common\Common.Core\bin\Release\Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Geometry">
+      <HintPath>..\..\Common\Common.Geometry\bin\Release\Common.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constructors\IMeshConstructor.cs" />
+    <Compile Include="Constructors\MeshConstructor.cs" />
+    <Compile Include="Descriptors\EdgeConnection.cs" />
+    <Compile Include="Descriptors\EdgeIndex.cs" />
+    <Compile Include="Descriptors\MeshDescriptor.cs" />
+    <Compile Include="Descriptors\TriangleIndex.cs" />
+    <Compile Include="FaceBased\FBFace.cs" />
+    <Compile Include="FaceBased\FBMesh.cs" />
+    <Compile Include="FaceBased\FBMeshConstructor.cs" />
+    <Compile Include="FaceBased\FBVertex.cs" />
+    <Compile Include="FaceBased\FBVertex2f.cs" />
+    <Compile Include="HalfEdgeBased\HBEdge.cs" />
+    <Compile Include="HalfEdgeBased\HBFace.cs" />
+    <Compile Include="HalfEdgeBased\HBMesh.cs" />
+    <Compile Include="HalfEdgeBased\HBMeshConstructor.cs" />
+    <Compile Include="HalfEdgeBased\HBMeshConversion.cs" />
+    <Compile Include="HalfEdgeBased\HBVertex.cs" />
+    <Compile Include="HalfEdgeBased\HBVertex2f.cs" />
+    <Compile Include="HalfEdgeBased\HBVertex3f.cs" />
+    <Compile Include="HalfEdgeBased\HBWeldVertices.cs" />
+    <Compile Include="IndexBased\IndexableMesh.cs" />
+    <Compile Include="IndexBased\Mesh2f.cs" />
+    <Compile Include="IndexBased\Mesh3f.cs" />
+    <Compile Include="IndexBased\MeshConstructor2f.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)bin\$(ConfigurationName)\CGAL.Meshes.dll" "F:\Unity Projects\Personal\CGALUnity\Assets\CGAL\Plugins\x86_64" /y
+xcopy "$(ProjectDir)bin\$(ConfigurationName)\CGAL.Meshes.dll" "F:\Unity Projects\Personal\GeoMorph\Assets\CGAL\Plugins\x86_64" /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

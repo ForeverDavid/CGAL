@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{085F7332-4031-4311-9D08-7321EFB89BBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CGAL.Polygons</RootNamespace>
+    <AssemblyName>CGAL.Polygons</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CGAL.Geometry">
+      <HintPath>..\CGAL.Geometry\bin\Release\CGAL.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="CGAL.Meshes">
+      <HintPath>..\CGAL.Meshes\bin\Release\CGAL.Meshes.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Core">
+      <HintPath>..\..\Common\Common.Core\bin\Release\Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Geometry">
+      <HintPath>..\..\Common\Common.Geometry\bin\Release\Common.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Polygons\CreatePolygon2.cs" />
+    <Compile Include="Polygons\MinkowskiSums2.cs" />
+    <Compile Include="Polygons\Polygon2f.cs" />
+    <Compile Include="Polygons\PolygonBoolean2.cs" />
+    <Compile Include="Polygons\PolygonIntersection2.cs" />
+    <Compile Include="Polygons\PolygonPartition2.cs" />
+    <Compile Include="Polygons\PolygonSimplify2.cs" />
+    <Compile Include="Polygons\PolygonSkeleton2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)bin\$(ConfigurationName)\CGAL.Polygons.dll" "F:\Unity Projects\Personal\CGALUnity\Assets\CGAL\Plugins\x86_64" /y
+xcopy "$(ProjectDir)bin\$(ConfigurationName)\CGAL.Polygons.dll" "F:\Unity Projects\Personal\GeoMorph\Assets\CGAL\Plugins\x86_64" /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>
